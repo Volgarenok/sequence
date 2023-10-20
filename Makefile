@@ -1,3 +1,3 @@
 
-build: main.cpp
-	g++ main.cpp -o sequence
+sequence: main.cpp
+	g++ $^ -o $@
