@@ -1,3 +1,3 @@
 
-sequence: main.cpp
+sequence: main.cpp sequence_counter.cpp
 	g++ $^ -o $@
