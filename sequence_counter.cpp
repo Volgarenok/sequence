@@ -2,11 +2,11 @@
 #include <limits>
 #include <stdexcept>
 
-SequenceCounter::SequenceCounter():
+dobsov::SequenceCounter::SequenceCounter():
   count_(0)
 {}
 
-void SequenceCounter::count(int)
+void dobsov::SequenceCounter::count(int)
 {
   size_t max_size = std::numeric_limits< size_t >::max();
   if (count_ == max_size)
@@ -15,7 +15,7 @@ void SequenceCounter::count(int)
   }
   ++count_;
 }
-size_t SequenceCounter::get_result() const
+size_t dobsov::SequenceCounter::get_result() const
 {
   return count_;
 }
